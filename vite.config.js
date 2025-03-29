@@ -12,5 +12,10 @@ export default defineConfig({
   assetsInclude: ['**/*.png'],
   build: {
     assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        manualChunks: undefined
+      }
+    }
   }
 }) 
